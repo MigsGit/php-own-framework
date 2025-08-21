@@ -1,3 +1,3 @@
 <?php
-    echo "";
+    echo "Status Code 200 Framework";
 ?>
