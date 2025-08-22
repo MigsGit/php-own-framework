@@ -1,4 +1,9 @@
 #!/bin/bash
+if [ ! -f "vendor/autoload.php" ]; then
+    composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader
+else
+    echo "vendor/autoload.php file exists."
+fi
 
 if [ ! -f ".env" ]; then
     echo "Creating env file for env $APP_ENV"

@@ -1,3 +1,16 @@
 <?php
-    echo "Status Code 200 Framework";
-    return;
+   
+
+/**
+ * Define root directory.
+ */
+define('APP_ROOT', dirname(__DIR__));
+
+/**
+ * Register The Auto Loader.
+ */
+
+require_once APP_ROOT . '/vendor/autoload.php';
+
+
+echo '/vendor/autoload.php is exists.';
