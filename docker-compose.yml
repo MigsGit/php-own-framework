@@ -1,6 +1,6 @@
 services:
-    php-app:
-        container_name: php-app
+    pixelx-php-app-1x:
+        container_name: pixelx-php-app-1x
         build:
             context: .
             target: php
@@ -12,10 +12,4 @@ services:
         volumes:
             - ./:/app
         ports:
-            - 8304:8304
-networks:
-  laravel-network:
-    driver: bridge
-
-volumes:
-  mysql_data:
+            - 8320:8320

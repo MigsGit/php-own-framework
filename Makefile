@@ -1,7 +1,7 @@
 .PHONY: help ps build build-prod start fresh fresh-prod stop restart destroy \
 	cache cache-clear migrate migrate migrate-fresh tests tests-html
 
-CONTAINER_PHP=web-api
+CONTAINER_PHP=pixelx
 CONTAINER_REDIS=redis
 CONTAINER_DATABASE=database
 
@@ -65,5 +65,3 @@ lint: ## Run phpcs
 
 lint-fix: ## Run phpcbf
 	./vendor/bin/phpcbf --standard=ruleset.xml app/
-
-
